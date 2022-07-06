@@ -1,0 +1,62 @@
+.link {
+    color: $descriptionColor;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: nowrap;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: 'Roboto', 'Raleway', sans-serif;
+    background-color: $indexBackgroundColor;
+
+    &:hover,
+    &:focus {
+        color: $brandColor;
+    }
+
+    &:hover .contact__icon,
+    &:focus .contact__icon {
+        fill: $brandColor;
+    }
+}
+
+.contact {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.contact__item{
+    &--start{
+        padding-right: 30px;
+    }
+
+    &--end{
+        padding-right: 0px;
+    }
+}
+
+
+.contact__icon {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &--start,
+    &--end{
+        margin-right: 10px;
+    }
+}
+
+
+.page-header__contact {
+    margin-right: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-left: 345px;
+}
+
+.address-list__link,
+.address-list__link {
+    color: $contactLinkColor;
+    display: block;
+    background-color: $darkBackgroundColor;
+}

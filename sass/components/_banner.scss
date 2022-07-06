@@ -1,0 +1,34 @@
+.section__banner {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+}
+
+.banner {
+    background-color:$darkBackgroundColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+    flex-basis: 1600px;
+    max-width: 1600px;
+    justify-content: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backphoto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &__title {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 60px;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            color: $lightTextColor;
+            max-width: 696px;
+        }
+}
+
