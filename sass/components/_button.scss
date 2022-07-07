@@ -18,8 +18,10 @@
     
 
     &--with-icon-right {
-        display:block;
+        display:flex;
         margin: 0 auto;
+        align-items:center;
+        justify-content:center;
         /* padding: 10px 24px 10px 42px; */
     }
 
@@ -41,4 +43,14 @@
         }
     }
 
+}
+
+@media screen and (min-width:768px){
+    .button{
+
+        &--with-icon-right{
+            
+        }
+    }
+    
 }
