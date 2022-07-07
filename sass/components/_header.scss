@@ -3,6 +3,19 @@
 }
 
 .page-header {
+    background-color: $indexBackgroundColor;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+
+    &__nav {
+        display:none;
+    }
+
+}
+
+/* .page-header {
     background-color:$indexBackgroundColor;
     font-size: 14px;
     font-weight: 500;
@@ -79,3 +92,4 @@
         top: 40px;
     }
 }
+ */
