@@ -1,6 +1,7 @@
 
 .body {
     position: relative;
+    min-width:320px;
 }
 
 .container {
@@ -10,8 +11,11 @@
     padding-right: 15px;
 }
 
-.section {
-    min-width:320px;
+.section{
+    padding-top:60px;
+}
+
+/* .section {
     padding-top: 94px;
     padding-bottom: 94px;
     
@@ -28,7 +32,7 @@
         font-size: 36px;
         color: $darkTextColor;
     }
-}
+} */
 
 
 
@@ -40,4 +44,8 @@
 figure {
     margin: 0;
     padding: 0;
+}
+
+@media screen and (min-width:768px){
+
 }
