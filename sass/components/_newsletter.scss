@@ -51,8 +51,37 @@
 
 @media screen and (min-width:768px) {
     .newsletter{
+        display:block;
         text-align: center;
         margin:0 auto;
+        padding:0 152px 0 166px;
+    }
+    
+}
+
+@media screen and (min-width:1200px){
+    .newsletter{
+        padding: 0;
+        display:flex;
+        justify-content: space-between;
+        margin:0;
+        align-items:flex-end;
+        
+
+        &__label{
+            text-align:left;
+            display:flex;
+            flex-direction:column;
+            padding-bottom:0;
+        }
+
+        &__input{
+
+            &--position{
+                margin-right:12px;
+                margin-bottom:0;
+            }
+        }
     }
     
 }

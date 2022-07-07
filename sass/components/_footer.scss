@@ -53,13 +53,34 @@
     
 }
 
+@media screen and (min-width:1200px) {
+    .footer-content{
+        max-width:1200px;
+        flex-wrap:nowrap;
+        margin:0 auto;
+        padding-right:15px;
+        padding-left:15px;
+    }
 
-/* .footer-content {
-    display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: baseline;
+    .address {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .address-list {
+        display: flex;
+        flex-direction: column;
+
+        &__item {
+            margin-bottom: 9px;
+            display: inline-block;
+            text-align:left;
+        }
+    }    
 }
+
+/* 
 
 .address {
     display: flex;
