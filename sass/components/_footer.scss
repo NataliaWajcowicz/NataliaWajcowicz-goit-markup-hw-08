@@ -7,6 +7,39 @@
 }
 
 .footer-content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.address{
+    padding-bottom:20px;
+}
+
+.address-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+
+    &__item{
+        margin-bottom: 8px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: $lightTextColor;
+
+        &--last{
+            margin-bottom:0;
+        }
+    }
+
+}
+
+
+/* .footer-content {
     display: flex;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -40,5 +73,5 @@
         letter-spacing: 0.03em;
         color: $lightTextColor;
     }
-}
+} */
 

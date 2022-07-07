@@ -2,11 +2,13 @@
     font-size: 14px;
     letter-spacing: 0.03em;
     list-style-type: none;
+    margin:0 auto;
 
     &__item {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: space-between;
+        flex-basis:994px;
         justify-content: center;
 
         &--top,
@@ -24,76 +26,64 @@
     justify-content: center;
     background-color: $lightColor;
 
-    &__icon--position {
-        margin-top: 25px;
-        margin-bottom: 25px;
+    &__icon{
+        &--position {
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
     }
 
     &__feature-description {
         background-color: $indexBackgroundColor;
         text-align:center;
-
-
-        &__name {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-size: 14px;
-            font-weight: 700;
-            line-height: 16px;
-            letter-spacing:0.03em;
-            text-transform: uppercase;
-            color: $darkTextColor;
-
-            &--position {
-                margin-top: 30px;
-                margin-bottom: 10px;
-            }
-        }
-
-        &__text {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1.71;
-            letter-spacing: 0.03em;
-            color: $descriptionColor;
-        }
     }
 }
+
+.feature-description {
+
+    &__name {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight:700;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing:0.03em;
+        text-transform: uppercase;
+        color: $darkTextColor;
+
+        &--position {
+            margin-top: 30px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $descriptionColor;
+    }
+}
+
 
 @media screen and (min-width:768px){
     .feature-list{
         display:flex;
         flex-wrap:wrap;
         align-items: center;
-        margin-top:0px;
-        margin-left:0px;
-        padding:15px;
+        justify-content: space-between;
 
         &__item{
             flex-basis:calc(100%/2 - 30px);
             max-width:354px;
 
-            &--position {
-                margin-top: 30px;
-                margin-bottom: 10px;
-            }
-
-            &--top{
-                margin-right:30px;
-            }
-
-
+            &--top,
             &--middle {
-                margin-right:0px;
+                margin-bottom: 0px;
             }
-
-            &--down{
-                margin-bottom:30px;
-                margin-left:30px;
-            }
-
         }
     }
 
@@ -108,6 +98,7 @@
     }
 }
 
+
 @media screen and (min-width:1200px){
     .feature-list {
         flex-wrap:nowrap;
@@ -115,14 +106,6 @@
         &__item{
             max-width:270px;
             margin-bottom:0px;
-
-            &--middle{
-                margin-right:30px;
-            }
-
-            &--down{
-                margin-left:0px;
-            }
         }
     }
 
