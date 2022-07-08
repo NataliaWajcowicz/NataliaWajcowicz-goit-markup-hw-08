@@ -41,7 +41,7 @@
                         </svg>+48 111 111 111</a>
                 </li>
             </ul>
-            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+            <button class="menu-toggle js-open-menu btn-mobile-menu" type="button" aria-expanded="false" aria-controls="mobile-menu">
                 <svg width="24" height="24" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd"
                         d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
@@ -441,11 +441,39 @@
             </form>
         </div>
     </div> -->
-    <div class="menu-container js-menu-container" id="mobile-menu">
+    <div class="menu-container js-menu-container is-open mobile-menu" id="mobile-menu">
 <!-- ma klase js-menu-container ! i w środku button do zamykania --> 
-        <button class="menu-toggle js-close-menu">
+        <button type="button" class="menu-toggle js-close-menu mobile-menu__close-btn" type="button">
+            X
+ <!--            <svg class="mobile-menu__close-icon" width="24" height="24">
+                <use href="./images/icons#mobile-menu-close"></use>
+            </svg> -->
+        </button>
+        <ul class="mobile-list mobile-menu__mobile-list">
+            <li class="mobile-list__item"><a class="mobile-list__link active" href="">Agencja</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link" href="">Portfolio</a></li>
+            <li class="mobile-list__item"><a class="mobile-list__link" href="">Kontakt</a></li>
+        </ul>
+        <ul class="contact-details mobile-menu__contact-details">
+            <li class="contact-details__item contact-details__item--start">
+                <a class="link contact-details__link" href="mailto:info@devstudio.com">
+                info@devstudio.com</a>
+            </li>
+            <li class="contact-details__item contact-details__item--end">
+                <a class="link contact-details__link" href="tel:+48111111111">
+                +48 111 111 111</a>
+            </li>
+        <ul class="mobile-social mobile-menu__mobile-social">
+            <li><a class="mobile-social__link" href="">Instagram</a></li>
+            <li><a class="mobile-social__link" href="">Twitter</a></li>
+            <li><a class="mobile-social__link" href="">Facebook</a></li>
+            <li><a class="mobile-social__link" href="">LinkedIn</a></li>
+        </ul>
+    </div>
 <!--klasa js-close-menu-->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/body-scroll-lock.js"></script>
 </body>
 
 </html>
