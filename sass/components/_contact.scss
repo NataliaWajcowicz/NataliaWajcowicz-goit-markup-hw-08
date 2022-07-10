@@ -1,5 +1,4 @@
 .link {
-    color: $descriptionColor;
     text-decoration: none;
     display: flex;
     flex-wrap: nowrap;
@@ -49,6 +48,7 @@
 
 .page-header__contact {
     display:none;
+    color:$descriptionColor;
 /*     margin-right: 0px;
     padding-right: 0px;
     padding-left: 0px;

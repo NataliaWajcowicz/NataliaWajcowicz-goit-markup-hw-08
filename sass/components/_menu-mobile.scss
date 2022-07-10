@@ -38,5 +38,118 @@
         display:block;
         z-index:4;
     }
+
+    &__mobile-list{
+        padding-top: 48px;
+        padding-left: 40px;
+    }
+
+    &__contact-details{
+        padding-left:40px;
+        margin:0;
+    }
+
+    &__social{
+        margin-left:40px;
+        
+    }
 }
 
+.mobile-list{
+    list-style: none;
+    margin:0;
+
+    &__item{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 40px;
+        line-height: 47px;
+        letter-spacing: 0.02em;
+        padding-bottom:0;
+
+        &--position{
+            padding-bottom:32px;
+        }
+    }
+
+    &__link{
+        text-decoration:none;
+        color: $darkTextColor;
+    }
+
+}
+
+.active{
+    &::after{
+        display:none;
+    }
+}
+
+.contact-details{
+    list-style: none;
+    margin-top:302px;
+
+    &__item{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+
+        &--start{
+            font-size: 34px;
+            line-height: 40px;
+            letter-spacing: 0.02em;
+        }
+
+        &--end{
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: 0.02em;
+            padding-top:32px;
+            padding-bottom:64px;
+        }
+    }
+
+    &__link{
+        color:$descriptionColor;
+
+        &--tel{
+            color:$brandColor;
+        }
+
+        &:hover,
+        &:focus{
+            display:none;
+        }
+    }
+}
+
+.mobile-social{
+    display:flex;
+    flex-wrap:nowrap;
+    list-style:none;
+    align-items:center;
+
+    &__link{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        letter-spacing: 0.02em;
+        color:$brandColor;
+        text-decoration:none;
+        padding-right:10px;
+        padding-left:10px;
+        border-right:1px solid rgba(33, 33, 33, 0.2);
+
+        &--start{
+            padding-left:0;
+        }
+
+        &--end{
+            border-right:none;
+        }
+
+    }
+}

@@ -441,6 +441,7 @@
             </form>
         </div>
     </div> -->
+<!-- MOBILE-MENU -->
     <div class="menu-container js-menu-container is-open mobile-menu" id="mobile-menu">
 <!-- ma klase js-menu-container ! i w środku button do zamykania --> 
         <button type="button" class="menu-toggle js-close-menu mobile-menu__close-btn" type="button">
@@ -450,24 +451,25 @@
             </svg> -->
         </button>
         <ul class="mobile-list mobile-menu__mobile-list">
-            <li class="mobile-list__item"><a class="mobile-list__link active" href="">Agencja</a></li>
-            <li class="mobile-list__item"><a class="mobile-list__link" href="">Portfolio</a></li>
+            <li class="mobile-list__item mobile-list__item--position"><a class="mobile-list__link active" href="index.html">Agencja</a></li>
+            <li class="mobile-list__item mobile-list__item--position"><a class="mobile-list__link" href="portfolio.html">Portfolio</a></li>
             <li class="mobile-list__item"><a class="mobile-list__link" href="">Kontakt</a></li>
         </ul>
         <ul class="contact-details mobile-menu__contact-details">
             <li class="contact-details__item contact-details__item--start">
+                <a class="link contact-details__link contact-details__link--tel" href="tel:+48111111111">
+                +48 111 111 111</a>
+                </li>
+            <li class="contact-details__item contact-details__item--end">
                 <a class="link contact-details__link" href="mailto:info@devstudio.com">
                 info@devstudio.com</a>
             </li>
-            <li class="contact-details__item contact-details__item--end">
-                <a class="link contact-details__link" href="tel:+48111111111">
-                +48 111 111 111</a>
-            </li>
+        </ul>
         <ul class="mobile-social mobile-menu__mobile-social">
-            <li><a class="mobile-social__link" href="">Instagram</a></li>
+            <li><a class="mobile-social__link mobile-social__link--start" href="">Instagram</a></li>
             <li><a class="mobile-social__link" href="">Twitter</a></li>
             <li><a class="mobile-social__link" href="">Facebook</a></li>
-            <li><a class="mobile-social__link" href="">LinkedIn</a></li>
+            <li><a class="mobile-social__link mobile-social__link--end" href="">LinkedIn</a></li>
         </ul>
     </div>
 <!--klasa js-close-menu-->
