@@ -81,9 +81,11 @@
 }
 
 .active{
-    &::after{
-        display:none;
-    }
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    color:$brandColor;
 }
 
 .contact-details{

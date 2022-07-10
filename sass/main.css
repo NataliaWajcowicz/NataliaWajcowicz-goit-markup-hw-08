@@ -180,8 +180,12 @@ figure {
   color: #212121;
 }
 
-.active::after {
-  display: none;
+.active {
+  position: relative;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  color: #2196F3;
 }
 
 .contact-details {
@@ -260,22 +264,6 @@ figure {
   display: none;
 }
 
-.active {
-  position: relative;
-  top: 0px;
-  left: 0px;
-  display: flex;
-  color: #2196F3;
-}
-.active::after {
-  content: "";
-  width: 51px;
-  position: absolute;
-  border-top: 4px solid #2196F3;
-  border-radius: 2px;
-  top: 40px;
-}
-
 .btn-mobile-menu {
   border: none;
   background-color: #FFFFFF;
@@ -327,6 +315,22 @@ figure {
   }
   .menu__link:hover, .menu__link:focus {
     color: #2196F3;
+  }
+
+  .active {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    color: #2196F3;
+  }
+  .active::after {
+    content: "";
+    width: 51px;
+    position: absolute;
+    border-top: 4px solid #2196F3;
+    border-radius: 2px;
+    top: 40px;
   }
 }
 /* .page-header {

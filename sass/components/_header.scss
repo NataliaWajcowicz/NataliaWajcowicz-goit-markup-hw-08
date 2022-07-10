@@ -15,22 +15,6 @@
 
 }
 
-.active {
-    position: relative;
-    top: 0px;
-    left: 0px;
-    display: flex;
-    color: $brandColor;
-
-    &::after {
-        content: "";
-        width: 51px;
-        position: absolute;
-        border-top: 4px solid $brandColor;
-        border-radius: 2px;
-        top: 40px;
-    }
-}
 
 .btn-mobile-menu{
     border:none;
@@ -97,6 +81,23 @@
             &:focus {
                 color: $brandColor;
             }
+        }
+    }
+
+    .active {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        display: flex;
+        color: $brandColor;
+    
+        &::after {
+            content: "";
+            width: 51px;
+            position: absolute;
+            border-top: 4px solid $brandColor;
+            border-radius: 2px;
+            top: 40px;
         }
     }
 }
