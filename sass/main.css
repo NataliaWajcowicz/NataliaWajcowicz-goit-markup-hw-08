@@ -241,6 +241,11 @@ figure {
   border-right: none;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
 .menu-section {
   border-bottom: 1px solid #ECECEC;
 }
@@ -411,6 +416,7 @@ figure {
   letter-spacing: 0.03em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-decoration: none;
+  border: none;
 }
 .logo:hover, .logo:focus {
   color: #2196F3;
@@ -532,11 +538,14 @@ figure {
 
 @media screen and (min-width: 768px) {
   .page-header__contact {
+    padding-left: 0;
+    margin: 0;
+  }
+
+  .contact {
     display: block;
     color: #757575;
     list-style: none;
-    padding-left: 0;
-    margin: 0;
   }
 
   .link {
@@ -549,6 +558,22 @@ figure {
     letter-spacing: 0.02em;
   }
 
+  .contact__icon {
+    max-width: 14px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contact__icon--start, .contact__icon--end {
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+  }
+
   .contact__item--start {
     padding-right: 30px;
   }
@@ -557,11 +582,10 @@ figure {
   }
 
   .contact__icon {
-    max-width: 14px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 16px;
   }
   .contact__icon--start, .contact__icon--end {
-    margin-right: 8px;
+    margin-right: 10px;
   }
 }
 .section__banner {
