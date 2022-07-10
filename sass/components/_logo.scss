@@ -62,3 +62,11 @@
     padding-bottom: 20px;
     color: $logoLightColor;
 }
+
+@media screen and (min-width:768px){
+    .page-header__logo {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-right: 0px;
+    }
+}
