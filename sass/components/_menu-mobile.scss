@@ -17,27 +17,23 @@
     }
 
     &__close-btn{
+        cursor:pointer;
+        width:40px;
+        height:40px;
+        display:flex;
+        align-items:center;
+        background-color: transparent;
         position:absolute;
         top:21px;
         right:25px;
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        max-width:40px;
-        height:40px;
-        cursor:pointer;
         border:none;
-        z-index:3;
+
+        &:hover svg,
+        &:focus svg{
+            fill:$brandColor;
+        }
     }
 
-    &__close-icon{
-        position:relative;
-        width:24px;
-        height:24px;
-        overflow:visible;
-        display:block;
-        z-index:4;
-    }
 
     &__mobile-list{
         padding-top: 48px;
