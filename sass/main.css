@@ -98,10 +98,14 @@ figure {
   color: #212121;
   line-height: 1.62;
   letter-spacing: 0.03em;
-  width: 121px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 38px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: none;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 .button--small:hover, .button--small:focus {
   background-color: #2196F3;
@@ -1238,7 +1242,7 @@ figure {
  */
 .project__filters {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   padding-bottom: 40px;
 }
 
@@ -1262,8 +1266,7 @@ figure {
 .project-list {
   list-style-type: none;
   padding: 0;
-  margin-bottom: 0;
-  margin-top: 0;
+  margin: 0 auto;
 }
 .project-list__item {
   padding-bottom: 30px;
@@ -1346,16 +1349,71 @@ figure {
 }
 
 @media screen and (min-width: 768px) {
-  .project__filters {
-    padding-bottom: 14px;
+  .filters {
+    justify-content: center;
   }
 
-  .filters {
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    flex-basis: 645px;
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project-list__item {
+    margin-bottom: 0px;
+  }
+  .project-list__item--first-column {
+    padding-right: 30px;
+  }
+
+  .project-card {
+    max-width: 354px;
+    flex-basis: 440px;
+  }
+
+  .project-description--first {
+    padding-bottom: 56px;
   }
 }
+/* .project__filters{
+        padding-bottom:14px;
+        margin:0 auto;
+        max-width:645px;
+
+    }
+
+    .filters{
+        flex-wrap:nowrap;
+        flex-basis:645px;
+    }
+
+    .project-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+
+
+            &__item {
+                flex-basis:calc(100%/2 - 30px);
+                margin-left:0;
+                margin-top:30px;
+
+                &--first-column{
+                    margin-right:30px;
+                }
+            }
+        }
+
+    .project-card {
+        max-width: 354px;
+        margin:0;
+
+
+
+        &__overlay {
+            padding: 49px 45px 49px 24px;
+        }
+    }
+
+} */
 /* .filters {
     display: flex;
     flex-direction: row;
