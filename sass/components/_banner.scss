@@ -56,7 +56,7 @@
     }
 }
 
-@media (min-width:768px) and (min-device-pixel-ratio:2),
+@media (max-width:1200px) and (min-device-pixel-ratio:2),
 (min-resolution:192dpi),
 (min-resolution:2dppx) {
     .banner {
@@ -83,12 +83,12 @@
     }
 }
 
-@media (min-width:1200px) and (min-device-pixel-ratio:2),
+@media (min-device-pixel-ratio:2),
 (min-resolution:192dpi),
 (min-resolution:2dppx) {
     .banner{
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../images/banner-desktop@2x.png);
+            url(../images/banner-desktop@2x.jpg);
         
     }
 }
