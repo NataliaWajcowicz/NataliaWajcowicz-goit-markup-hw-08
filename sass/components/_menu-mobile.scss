@@ -34,6 +34,10 @@
         }
     }
 
+    &__content{
+        max-width:357px
+    }
+
 
     &__mobile-list{
         padding-top: 48px;
@@ -151,7 +155,7 @@
 
     }
 }
-/* 
+
 @media screen and (min-width:768px) {
     .mobile-menu{
         overflow:hidden;
@@ -164,4 +168,4 @@
         width: 1px;
     }
     
-} */
+}
