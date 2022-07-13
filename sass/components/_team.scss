@@ -4,6 +4,7 @@
 
 .team-list {
     list-style-type: none;
+    padding:0;
 
     &__team-card{
         margin-top:30px;
@@ -55,16 +56,17 @@
     .team-list {
         display: flex;
         flex-wrap:wrap;
-        justify-content:center;
+        justify-content:space-between;
 
-        &__team-card{
-            margin-right: 30px;
-        }
     }
 
     .team-card{
         flex-basis: 536px;
         max-width: 354px;
+
+        &--left{
+            margin-right:30px;
+        }
     }
     
 }
