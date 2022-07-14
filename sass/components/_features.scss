@@ -74,21 +74,23 @@
         display:flex;
         flex-wrap:wrap;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
 
         &__item{
             flex-basis:calc(100%/2 - 30px);
-            max-width:354px;
 
             &--top,
             &--middle {
                 margin-bottom: 0px;
             }
+
+            &--left{
+                margin-right: 30px;
+            }
         }
     }
 
     .feature-card{
-        max-width:345px;
 
         &--position {
             margin-top: 0px;
@@ -102,10 +104,15 @@
 @media screen and (min-width:1200px){
     .feature-list {
         flex-wrap:nowrap;
+        justify-content: space-between;
      
         &__item{
             max-width:270px;
             margin-bottom:0px;
+
+            &--left {
+                    margin-right: 0px;
+                }
         }
     }
 
