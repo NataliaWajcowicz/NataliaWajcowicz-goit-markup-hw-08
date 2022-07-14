@@ -866,7 +866,6 @@ img {
   .team-list {
     display: flex;
     flex-wrap: wrap;
-    align-items: space-between;
   }
   .team-list__item {
     flex-basis: calc(50% - 30px);
@@ -874,13 +873,14 @@ img {
   .team-list__item--left {
     margin-right: 30px;
   }
-  .team-list .team-card {
-    max-width: 354px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .team-list {
     flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+  .team-list__item--left {
+    margin-right: 0px;
   }
   .team-list__team-card {
     margin-top: 50px;
