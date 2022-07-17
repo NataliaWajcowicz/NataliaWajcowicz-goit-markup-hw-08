@@ -72,6 +72,12 @@
         display: block;
         color: $descriptionColor;
         list-style: none;
+
+        &__item{
+            &--start{
+                margin-bottom:10px;
+            }
+        }
     }
 
     .link{
@@ -98,6 +104,13 @@
 }
 
 @media screen and (min-width:1200px) {
+    .page-header{
+        &__contact{
+            margin-right:0px;
+            padding-left:350px;
+        }
+
+    }
     .contact {
             display: flex;
             flex-wrap: nowrap;

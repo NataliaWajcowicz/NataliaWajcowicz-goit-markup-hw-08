@@ -53,9 +53,7 @@
 @media screen and (min-width:1200px) {
     .footer-content{
         flex-wrap:nowrap;
-        margin:0 auto;
-        padding-right:15px;
-        padding-left:15px;
+        justify-content: space-between;
     }
 
     .address {
@@ -67,6 +65,7 @@
     .address-list {
         display: flex;
         flex-direction: column;
+        width:247px;
 
         &__item {
             margin-bottom: 9px;
@@ -74,6 +73,7 @@
             text-align:left;
         }
     }    
+
 }
 
 /* 

@@ -4,6 +4,7 @@
     list-style-type: none;
     margin: 0;
     padding:0;
+    justify-content:space-between;
 /*     padding: 0 0 30px 0; */
 
     &__item{
@@ -93,6 +94,18 @@
             }
         }
     }
+}
+
+@media screen and (min-wodth:1200px){
+    .social-list{
+        max-width:206px;
+        &__item{
+            &--position{
+                margin-right: 12px;
+            }
+        }
+    }
+
 }
 
 
