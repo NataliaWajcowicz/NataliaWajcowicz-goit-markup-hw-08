@@ -648,11 +648,11 @@ img {
     align-items: center;
     justify-content: center;
   }
-  __item--start {
+  .contact__item--start {
     padding-right: 30px;
     margin-bottom: 0px;
   }
-  __item--end {
+  .contact__item--end {
     padding-right: 0px;
   }
   .contact__icon {

@@ -111,18 +111,20 @@
         }
 
     }
+
     .contact {
             display: flex;
             flex-wrap: nowrap;
             align-items: center;
             justify-content: center;
-        }
+    
     
         &__item {
             &--start {
                 padding-right: 30px;
                 margin-bottom:0px;
             }
+        
     
             &--end {
                 padding-right: 0px;
@@ -130,7 +132,7 @@
         }
     
     
-        .contact__icon {
+        &__icon {
             max-width:16px;
     
             &--start,
@@ -139,4 +141,6 @@
             }
         }
     
+    }
 }
+      
