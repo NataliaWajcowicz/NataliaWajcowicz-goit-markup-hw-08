@@ -159,6 +159,10 @@
 
     @media screen and (min-width:1200px) {
         .project-list{
+            padding-left:0px;
+            padding-right:0px;
+            justify-content: center;
+            align-items:center;
 
             &__item{
                 flex-basis:calc(100%/3 - 30px);

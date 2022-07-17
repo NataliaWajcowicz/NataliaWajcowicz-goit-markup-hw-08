@@ -66,6 +66,7 @@
 
 @media screen and (min-width:1200px){
     .banner {
+        max-width:1600px;
         background-color:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/banner-desktop.png);
             height:600px;
